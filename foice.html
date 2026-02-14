@@ -1,11 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<title>Item Details</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #eee;
+}
+
+.container {
+    display: flex;
+    width: 900px;
+    margin: 30px auto;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* ESQUERDA - PERSONAGEM */
+.character {
+    width: 50%;
+    position: relative;
+    height: 400px;
+}
+
+.slot {
+    width: 70px;
+    height: 70px;
+    background: #ccc;
+    border: 2px solid #666;
+    border-radius: 8px;
+    position: absolute;
+}
+
+/* posições dos slots */
+.head { top: 20px; left: 150px; }
+.chest { top: 110px; left: 150px; }
+.weapon { top: 110px; left: 50px; }
+.offhand { top: 110px; left: 250px; }
+.shoes { top: 200px; left: 150px; }
+.bag { top: 200px; left: 50px; }
+.cape { top: 200px; left: 250px; }
+
+/* DIREITA - DETALHES */
+.details {
+    width: 50%;
+    padding-left: 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.item-box {
+    background: #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.item-title {
+    font-weight: bold;
+}
+
+.skills {
+    margin-top: 5px;
+}
+
+.skill {
+    width: 28px;
+    height: 28px;
+    background: gold;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+</style>
 </head>
 <body>
-    
+
+<div class="container">
+
+    <!-- PERSONAGEM -->
+    <div class="character">
+        <div class="slot head"></div>
+        <div class="slot chest"></div>
+        <div class="slot weapon"></div>
+        <div class="slot offhand"></div>
+        <div class="slot shoes"></div>
+        <div class="slot bag"></div>
+        <div class="slot cape"></div>
+    </div>
+
+    <!-- DETALHES -->
+    <div class="details">
+        <h2>ITEM DETAILS</h2>
+
+        <div class="item-box">
+            <div class="item-title">Main Hand</div>
+            Tier 8, Foice de Cristal do Ancião
+            <div class="skills">
+                <span class="skill"></span>
+                <span class="skill"></span>
+                <span class="skill"></span>
+                <span class="skill"></span>
+            </div>
+        </div>
+
+        <div class="item-box">
+            <div class="item-title">Armor</div>
+            Tier 8, Casaco Infernal do Ancião
+            <div class="skills">
+                <span class="skill"></span>
+                <span class="skill"></span>
+            </div>
+        </div>
+
+        <div class="item-box">
+            <div class="item-title">Head</div>
+            Tier 8, Capuz Espectral do Ancião
+            <div class="skills">
+                <span class="skill"></span>
+                <span class="skill"></span>
+            </div>
+        </div>
+
+        <div class="item-box">
+            <div class="item-title">Shoes</div>
+            Tier 8, Sandálias da Pureza do Ancião
+            <div class="skills">
+                <span class="skill"></span>
+                <span class="skill"></span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
 </body>
 </html>
+
