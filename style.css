@@ -1,0 +1,72 @@
+
+.fundo-site img {
+    width: 100vw;    /* Largura total da janela */
+    height: 100vh;   /* Altura total da janela */
+    object-fit: cover; /* Faz a imagem preencher tudo sem esticar */
+    display: block;    /* Remove espaços vazios embaixo da imagem */
+    position: fixed;   /* Mantém o fundo parado ao rolar (opcional) */
+    top: 0;
+    left: 0;
+    z-index: -1;      /* Garante que o fundo fique atrás dos botões */
+}
+
+
+  html, body {
+    overflow: hidden; /* Trava a rolagem apenas no celular */
+    height: 100%;
+  }
+
+
+body {
+  margin: 0;          /* Tira a bordinha branca chata em volta do site */
+  overflow-x: hidden; /* Garante que não apareça barra de rolagem pros lados */
+}
+
+.BEM-VINDO{
+    background-color: rgba(47, 218, 84, 0.301);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    display: block;
+    margin:  80px auto;
+    border-radius: 15px;
+    border: 2px  solid black;
+    width: fit-content;
+    padding: 5px 10px;
+}
+
+.DClink{
+    background-color: rgba(47, 218, 84, 0.301);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    margin: 5px auto;
+    display: block;
+    width: fit-content;
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 5px 10px;
+}
+.BUILDS{
+    background-color: rgba(47, 218, 84, 0.301);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    margin: 5px auto;
+    display: block;
+    width: fit-content;
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 5px 10px;
+}
+
+
